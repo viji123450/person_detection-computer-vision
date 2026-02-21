@@ -2,9 +2,7 @@
 Pose-Based Multi-ROI Grasping Detection System
 
 This project is a real-time human interaction analytics system built using the NVIDIA DeepStream SDK.
-
 It detects people in a video stream, extracts pose keypoints, monitors wrist movement inside defined Regions of Interest (ROIs), and logs interaction analytics in structured JSON format.
-
 The system is designed for practical deployment scenarios like retail monitoring, warehouse analytics, and smart interaction tracking.
 
 
