@@ -17,7 +17,7 @@ Monitors left and right wrist positions
 Detects ROI-based grasping interactions
 Maintains per-ROI state tracking
 Logs structured per-frame JSON output
-Displays live visualization with OSD overlays
+Displays live visualization with OSD overlays.
 
 🏗️ Pipeline Architecture:
 
@@ -46,11 +46,11 @@ nveglglessink
 
 This system monitors:
 
-Left Wrist → COCO Keypoint Index 9
+Left Wrist → COCO Keypoint Index 9,
 Right Wrist → COCO Keypoint Index 10
 
 Interaction States
-GRASPING → Wrist is inside ROI
+GRASPING → Wrist is inside ROI,
 GRASPED → Wrist exited ROI after interaction
 
 Configuration 
@@ -63,11 +63,13 @@ Each ROI maintains its own state machine.
 
 
 🎨 Visualization
+
+
 Bounding Box Colors
-State	Color
-Default	Red
-Grasping	Green
-Grasped	Yellow
+State	Color,
+Default	Red,
+Grasping	Green,
+Grasped	Yellow,
 ROI Behavior
 
 Light Gray → No interaction
@@ -88,16 +90,18 @@ ROI entry time
 ROI exit time
 ROI interaction duration
 
+
 🛠️ Build Instructions
 
 Requirements:
-NVIDIA DeepStream SDK
-CUDA
-GStreamer
-json-glib
-NvDCF tracker
+NVIDIA DeepStream SDK,
+CUDA,
+GStreamer,
+json-glib,
+NvDCF tracker.
 
 Compile
+
 g++ main.cpp roi_tracker.cpp \
     -o human_roi_analytics \
     `pkg-config --cflags --libs gstreamer-1.0 json-glib-1.0` \
@@ -107,13 +111,15 @@ g++ main.cpp roi_tracker.cpp \
 
 Run
 ./human_roi_analytics config.json
+
+
 ⚙️ Performance Notes
 
-Streammux Resolution: 1920×1080
-Batched Push Timeout: 40000 µs
+Streammux Resolution: 1920×1080,
+Batched Push Timeout: 40000 µs,
 Confidence filtering applied
 Frame-level debouncing for stability
-Optimized NvDCF tracker configuration
+Optimized NvDCF tracker configuration.
 
 
 🧪 Real-World Use Cases
@@ -122,7 +128,7 @@ Retail shelf interaction monitoring
 Warehouse human-object interaction tracking
 Industrial safety monitoring
 Gesture-based automation systems
-Smart surveillance analytics
+Smart surveillance analytics.
 
 
 👨‍💻 About This Project
