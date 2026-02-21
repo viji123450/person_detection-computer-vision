@@ -53,10 +53,14 @@ Interaction States
 GRASPING → Wrist is inside ROI
 GRASPED → Wrist exited ROI after interaction
 
-Configuration
+Configuration 
+
 Keypoint confidence threshold: 0.5
+
 Debounce frames: 1
-Multiple ROIs supported independently
+
+Multiple ROIs supported independently 
+
 Each ROI maintains its own state machine.
 
 
