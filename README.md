@@ -56,11 +56,8 @@ GRASPED → Wrist exited ROI after interaction
 Configuration 
 
 Keypoint confidence threshold: 0.5
-
 Debounce frames: 1
-
 Multiple ROIs supported independently 
-
 Each ROI maintains its own state machine.
 
 
